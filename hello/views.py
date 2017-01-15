@@ -14,7 +14,7 @@ class HelloView(View):
             </head>
             <body>
                 <h1>Greetings to the world</h1>
-                <p>Hello, world!</p>
+                <p>Screw you, world!</p>
             </body>
             </html>
         ''')
