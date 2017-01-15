@@ -7,5 +7,5 @@ class ViewsTestCase(TestCase):
     def testHello(self):
         c = Client()
         r = c.get('/hello')
-        self.assertIn('Screw you, world!', r.content)
+        self.assertIn('Screw you, world!', str(r.content))
 
