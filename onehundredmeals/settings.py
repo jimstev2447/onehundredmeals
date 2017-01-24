@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 import os
 import dj_database_url
 
-
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
@@ -31,11 +30,6 @@ SECRET_KEY = '*(b$*u28wsu%__qb2w61zb!&$xk--g_l-*t6m3*k2v7c4#jzwq'
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-
-try:
-    from .local_settings import *
-except ImportError:
-    pass
 
 # Application definition
 
@@ -133,3 +127,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
