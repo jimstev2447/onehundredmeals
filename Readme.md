@@ -1,3 +1,4 @@
+[![build status](https://travis-ci.org/jimstev2447/onehundredmeals.svg?branch=master)](https://travis-ci.org/jimstev2447/onehundredmeals)
 
 100 meals
 ---------
